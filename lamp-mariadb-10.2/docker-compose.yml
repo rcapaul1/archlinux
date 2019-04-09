@@ -3,12 +3,14 @@ version: '3'
 services:
   db:
     build: ../testing/mariadb-10.2/.
-    volumes: ./:/var/lib/mysql
+    volumes:
+      - ./:/var/lib/mysql
     ports:
       - 3306:3306
 
   web:
     image: php:7.2-apache
-    volumes: ./html:/var/www/html
+    volumes:
+      - ./html:/var/www/html
     ports:
       - 80:80

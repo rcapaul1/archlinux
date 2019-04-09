@@ -2,7 +2,7 @@ version: '3'
 
 services:
   db:
-    build: ../testing/mariadb-10.2/.
+    build: ../../testing/mariadb-10.2/.
     volumes:
       - ./:/var/lib/mysql
     ports:

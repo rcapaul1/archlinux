@@ -1,2 +1,2 @@
 FROM archlinux/base
-RUN pacman -Suy -y && pacman -Suy git wget net-tools vim -y
+RUN pacman -Suy --noconfirm && pacman -Suy git wget net-tools vim --noconfirm

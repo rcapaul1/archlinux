@@ -1,0 +1,4 @@
+#!/bin/bash
+pacman -Suy --noconfirm && pacman -Sy xfce4 xfce4-goodies xorg xorg-server lxdm --noconfirm
+systemctl start lxdm.service && systemctl enable lxdm.service
+reboot
